@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: ink_theater
+title: Ink Theater — 手绘墨水风格动画与木偶 mocap 引擎
+scope:
+    - ink-theater/
+source_files: []
+depends_on: []
+related_to:
+    - path: remotion_composer

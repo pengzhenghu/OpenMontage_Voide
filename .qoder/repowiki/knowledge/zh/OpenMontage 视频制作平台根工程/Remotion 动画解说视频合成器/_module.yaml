@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: remotion_composer
+title: Remotion 动画解说视频合成器
+scope:
+    - remotion-composer/
+source_files: []
+depends_on: []
+related_to:
+    - path: agents_skills
+    - path: ink_theater
+    - path: styles

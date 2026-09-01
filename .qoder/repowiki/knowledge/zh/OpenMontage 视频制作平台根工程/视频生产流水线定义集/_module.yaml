@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: pipeline_defs
+title: 视频生产流水线定义集
+scope:
+    - pipeline_defs/
+source_files: []
+depends_on: []
+related_to:
+    - path: lib_core
+    - path: skills

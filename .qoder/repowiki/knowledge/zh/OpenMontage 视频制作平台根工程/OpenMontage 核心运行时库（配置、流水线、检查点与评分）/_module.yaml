@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: lib_core
+title: OpenMontage 核心运行时库（配置、流水线、检查点与评分）
+scope:
+    - lib/
+source_files: []
+depends_on: []
+related_to:
+    - path: backlot
+    - path: pipeline_defs
+    - path: schemas
+    - path: tests
+    - path: tools/base_infrastructure

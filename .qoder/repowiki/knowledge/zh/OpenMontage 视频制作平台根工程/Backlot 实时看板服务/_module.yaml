@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: backlot
+title: Backlot 实时看板服务
+scope:
+    - backlot/
+source_files: []
+depends_on: []
+related_to:
+    - path: docs
+    - path: lib_core
+    - path: scripts
+    - path: tests
