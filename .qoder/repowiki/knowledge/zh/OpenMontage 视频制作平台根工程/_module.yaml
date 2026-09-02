@@ -1,0 +1,33 @@
+schema_version: 1
+module_path: ""
+title: OpenMontage 视频制作平台根工程
+scope:
+    - README.md
+    - CONTRIBUTING.md
+    - .gitignore
+    - config.yaml
+    - Makefile
+    - setup.py
+    - requirements.txt
+    - requirements-dev.txt
+    - requirements-gpu.txt
+    - .windsurfrules
+    - AGENTS.md
+    - AGENT_GUIDE.md
+    - CLAUDE.md
+    - CODEX.md
+    - COPILOT.md
+    - CURSOR.md
+    - PROMPT_GALLERY.md
+    - PROJECT_CONTEXT.md
+    - render-demo.sh
+    - render_demo.py
+    - .env.example
+    - .gitattributes
+    - .python-version
+    - LICENSE
+    - README_zh-CN.md
+    - diagram.png
+source_files: []
+depends_on: []
+related_to: []

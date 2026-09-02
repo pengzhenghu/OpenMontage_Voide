@@ -1,0 +1,211 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: zh-CN
+branch: main
+nodes_managed: true
+exported_at: "2026-08-28T04:51:41Z"
+modules:
+    "":
+        dir_name: OpenMontage 视频制作平台根工程
+        title: OpenMontage 视频制作平台根工程
+        scope:
+            - README.md
+            - CONTRIBUTING.md
+            - .gitignore
+            - config.yaml
+            - Makefile
+            - setup.py
+            - requirements.txt
+            - requirements-dev.txt
+            - requirements-gpu.txt
+            - .windsurfrules
+            - AGENTS.md
+            - AGENT_GUIDE.md
+            - CLAUDE.md
+            - CODEX.md
+            - COPILOT.md
+            - CURSOR.md
+            - PROMPT_GALLERY.md
+            - PROJECT_CONTEXT.md
+            - render-demo.sh
+            - render_demo.py
+            - .env.example
+            - .gitattributes
+            - .python-version
+            - LICENSE
+            - README_zh-CN.md
+            - diagram.png
+        source_files: []
+        children:
+            - agents_skills
+            - backlot
+            - docs
+            - ink_theater
+            - lib_core
+            - pipeline_defs
+            - remotion_composer
+            - schemas
+            - scripts
+            - skills
+            - styles
+            - tests
+            - tools
+        depends_on: []
+        related_to: []
+    agents_skills:
+        dir_name: AI Agent Skills 知识库
+        title: AI Agent Skills 知识库
+        scope:
+            - .agents/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: remotion_composer
+    backlot:
+        dir_name: Backlot 实时看板服务
+        title: Backlot 实时看板服务
+        scope:
+            - backlot/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: docs
+            - path: lib_core
+            - path: scripts
+            - path: tests
+    docs:
+        dir_name: OpenMontage 项目文档与架构指南
+        title: OpenMontage 项目文档与架构指南
+        scope:
+            - docs/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: backlot
+    ink_theater:
+        dir_name: Ink Theater — 手绘墨水风格动画与木偶 mocap 引擎
+        title: Ink Theater — 手绘墨水风格动画与木偶 mocap 引擎
+        scope:
+            - ink-theater/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: remotion_composer
+    lib_core:
+        dir_name: OpenMontage 核心运行时库（配置、流水线、检查点与评分）
+        title: OpenMontage 核心运行时库（配置、流水线、检查点与评分）
+        scope:
+            - lib/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: backlot
+            - path: pipeline_defs
+            - path: schemas
+            - path: tests
+            - path: tools/base_infrastructure
+    pipeline_defs:
+        dir_name: 视频生产流水线定义集
+        title: 视频生产流水线定义集
+        scope:
+            - pipeline_defs/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: lib_core
+            - path: skills
+    remotion_composer:
+        dir_name: Remotion 动画解说视频合成器
+        title: Remotion 动画解说视频合成器
+        scope:
+            - remotion-composer/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: agents_skills
+            - path: ink_theater
+            - path: styles
+    schemas:
+        dir_name: OpenMontage JSON Schema 定义集
+        title: OpenMontage JSON Schema 定义集
+        scope:
+            - schemas/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: lib_core
+            - path: styles
+    scripts:
+        dir_name: OpenMontage 运维与端到端测试脚本集
+        title: OpenMontage 运维与端到端测试脚本集
+        scope:
+            - scripts/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: backlot
+            - path: tools/base_infrastructure
+    skills:
+        dir_name: OpenMontage 技能知识库（Layer 2 Skills）
+        title: OpenMontage 技能知识库（Layer 2 Skills）
+        scope:
+            - skills/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: pipeline_defs
+    styles:
+        dir_name: 样式剧本加载与可访问性校验
+        title: 样式剧本加载与可访问性校验
+        scope:
+            - styles/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: remotion_composer
+            - path: schemas
+    tests:
+        dir_name: OpenMontage 测试套件（Pytest + 基准_契约_QA）
+        title: OpenMontage 测试套件（Pytest + 基准/契约/QA）
+        scope:
+            - tests/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: backlot
+            - path: lib_core
+            - path: tools/base_infrastructure
+    tools:
+        dir_name: OpenMontage 工具集与能力注册中心
+        title: OpenMontage 工具集与能力注册中心
+        scope:
+            - tools/
+        source_files: []
+        children:
+            - tools/base_infrastructure
+        depends_on: []
+        related_to: []
+    tools/base_infrastructure:
+        dir_name: 工具基础设施与能力注册中心
+        title: 工具基础设施与能力注册中心
+        scope:
+            - tools/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: lib_core
+            - path: scripts
+            - path: tests

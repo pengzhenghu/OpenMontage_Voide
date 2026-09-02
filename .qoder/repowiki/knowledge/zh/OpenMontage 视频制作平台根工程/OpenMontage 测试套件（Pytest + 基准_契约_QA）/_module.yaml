@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: tests
+title: OpenMontage 测试套件（Pytest + 基准/契约/QA）
+scope:
+    - tests/
+source_files: []
+depends_on: []
+related_to:
+    - path: backlot
+    - path: lib_core
+    - path: tools/base_infrastructure

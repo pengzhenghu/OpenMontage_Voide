@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: styles
+title: 样式剧本加载与可访问性校验
+scope:
+    - styles/
+source_files: []
+depends_on: []
+related_to:
+    - path: remotion_composer
+    - path: schemas

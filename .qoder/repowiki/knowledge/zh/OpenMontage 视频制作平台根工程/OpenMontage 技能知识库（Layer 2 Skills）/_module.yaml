@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: skills
+title: OpenMontage 技能知识库（Layer 2 Skills）
+scope:
+    - skills/
+source_files: []
+depends_on: []
+related_to:
+    - path: pipeline_defs

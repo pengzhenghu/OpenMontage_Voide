@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: tools/base_infrastructure
+title: 工具基础设施与能力注册中心
+scope:
+    - tools/
+source_files: []
+depends_on: []
+related_to:
+    - path: lib_core
+    - path: scripts
+    - path: tests
